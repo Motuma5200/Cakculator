@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Calculator App</title>
+
+    <style>
+  
+       .whole{
+        background-color: hsl(222, 26%, 31%);
+       } 
+       
+       .parts{
+        background-color: hsl(223, 31%, 20%);
+       }
+
+    .inputDisplay{
+        background-color: hsl(224, 36%, 15%);
+        color:  hsl(0, 0%, 100%);
+        border: none;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: right;
+        box-shadow: none;
+    }
+
+    .reset{
+        background-color: hsl(225, 21%, 49%);
+        color: white;
+        border-radius: 15px;
+    }
+
+    .result{
+        background-color: hsl(6, 63%, 50%);
+        color: white;
+    }
+
+
+    </style>
+</head>
+<body class="container bg-primary">
+    <div class="container p-5 whole" >
+
+     <div class="container" id="calculate">
+
+        <div class="row inputDisplay p-3 mb-3" id="calculateArea">
+            <input class="col-12 inputDisplay" id="screen" type="text" name="numberToCalculate">
+        </div>
+
+        <div class="row parts p-2 fs-3" id="buttonsArea">
+            <div class="row g-2 mb-1">
+
+                <button class="col-3 p-2 rounded-pill" id="input7">7</button>
+                <button class="col-3 p-2 rounded-pill" id="input8">8</button>
+                <button class="col-3 p-2 rounded-pill" id="input9">9</button>
+                <button class="col-3 p-2 reset rounded-pill" id="inputDel">Delete</button>
+
+            </div>
+
+            <div class="row g-2 mb-1">
+               
+                <button class="col-3 p-2 rounded-pill" id="input4">4</button>
+                <button class="col-3 p-2 rounded-pill" id="input5">5</button>
+                <button class="col-3 p-2 rounded-pill" id="input6">6</button>
+                <button class="col-3 p-2 rounded-pill" id="inputPlus">+</button>
+
+            </div>
+            
+            <div class="row g-2 mb-1 ">
+
+                <button class="col-3 p-2 rounded-pill" id="input1">1</button>
+                <button class="col-3 p-2 rounded-pill" id="input2">2</button>
+                <button class="col-3 p-2 rounded-pill" id="input3">3</button>
+                <button class="col-3 p-2 rounded-pill" id="inputMinus">-</button>
+
+            </div>
+
+            <div class="row g-1 mb-1">
+
+                <button class="col-3 p-2 rounded-pill" id="inputDot">.</button>
+                <button class="col-3 p-2 rounded-pill" id="input0">0</button>
+                <button class="col-3 p-2 rounded-pill" id="inputDivide">/</button>
+                <button class="col-3 p-2 rounded-pill" id="inputFactor">x</button>
+
+            </div>
+            
+            <div class="row g-2 mb-1">
+
+                <button class="col-6 p-2 reset rounded-pill"  id="inputReset">Reset</button>
+                <button class="col-6 p-2 result rounded-pill" id="inputEqual">=</button>
+
+            </div>       
+
+        </div>
+
+     </div>
+    
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
